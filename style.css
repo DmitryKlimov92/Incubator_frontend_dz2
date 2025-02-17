@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif; /* Шрифт */
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
     color: #303030; /* Цвет текста */
 }
 
