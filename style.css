@@ -4,173 +4,192 @@
     box-sizing: border-box;
 }
 
-body {}
+body {
+    font-family: 'Inter', sans-serif; /* Шрифт */
+    color: #303030; /* Цвет текста */
+}
 
 header {
-    background-color: green;
-    height: 77px;
+    /* Стили для хедера */
+    background-color: #007bff; /* Цвет фона */
+    padding-top: 20px; /* Внутренний отступ сверху */
+    padding-bottom: 20px; /* Внутренний отступ снизу */
 }
 
 header span {
-    text-transform: uppercase; /* Преобразование текста в верхний регистр */
-    letter-spacing: 2px; /* Расстояние между буквами */
-    padding: 10px; /* Внутренний отступ */
-    color: #333; /* Цвет текста */
+    /* Стили для текста в хедере IT-INCUBATOR */
+    font-family: 'Inter', sans-serif; /* Шрифт */
+    font-weight: 700; /* Насыщенность (жирный) */
+    font-size: 20px; /* Размер шрифта */
+    line-height: 24.2px; /* Межстрочный интервал */
+    letter-spacing: 0; /* Межбуквенный интервал */
+    color: #333; /* Цвет текста (если нужен) */
 }
 
 .main-section {
     /* Стили для первой секции */
-    padding: 60px 20px; /* Внутренние отступы: 60px сверху и снизу, 20px по бокам */
-    text-align: center; /* Выравнивание текста по центру */
-    background-color: #f9f9f9; /* Фоновый цвет секции */
-    border-bottom: 2px solid #ddd; /* Граница снизу */
+    /* Цвет фона */
+    background-color: #f9f9f9;
+
+    /* Внутренние отступы сверху и снизу */
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    /* Минимальная высота, равная высоте окна браузера */
+    min-height: 100vh;
+
+    /* Центрирование контента */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Расстояние между текстом и изображением */
+    max-width: 1200px; /* Максимальная ширина секции */
+    margin: 0 auto; /* Центрирование секции */
+    padding-left: 20px; /* Отступы слева и справа */
+    padding-right: 20px;
 }
 
 .main-title {
-    font-family: 'Rubik', sans-serif; /* Шрифт для текста */
-    font-size: 18px; /* Размер текста */
-    color: #666; /* Цвет текста */
-    margin-bottom: 30px; /* Отступ снизу */
+    /* Стили для заголовка в первой секции */
+    font-family: 'Inter', sans-serif; /* Шрифт */
+    font-weight: 700; /* Насыщенность (жирный) */
+    font-size: 48px; /* Размер шрифта */
+    line-height: 58.09px; /* Межстрочный интервал */
+    letter-spacing: 0; /* Межбуквенный интервал */
+    color: #333; /* Цвет текста (если нужен) */
+    margin-bottom: 20px; /* Установка нижнего внешнего отступа в 20 пикселей */
 }
 
 .main-text {
-    font-family: 'Rubik', sans-serif; /* Шрифт для текста */
-    font-size: 18px; /* Размер текста */
-    color: #666; /* Цвет текста */
-    margin-bottom: 30px; /* Отступ снизу */
+    /* Стили для текста в первой секции */
+    font-family: 'Inter', sans-serif; /* Шрифт */
+    font-weight: 400; /* Насыщенность (жирный) */
+    font-size: 18px; /* Размер шрифта */
+    line-height: 21.78px; /* Межстрочный интервал */
+    letter-spacing: 0; /* Межбуквенный интервал */
+    color: #333; /* Цвет текста (если нужен) */
 }
 
 .main-image {
     /* Стили для изображения в первой секции */
-    max-width: 100%; /* Максимальная ширина изображения (адаптивность) */
-    height: auto; /* Автоматическая высота для сохранения пропорций */
-    border-radius: 10px; /* Закруглённые углы */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для изображения */
-    margin: 20px 0; /* Отступы сверху и снизу */
-    display: block; /* Чтобы изображение было блочным элементом */
-    margin-left: auto; /* Центрирование по горизонтали */
-    margin-right: auto; /* Центрирование по горизонтали */
+    max-width: 715px; /* Максимальная ширина изображения 715 пикселей */
+    width: 100%; /* Чтобы изображение адаптировалось к родительскому элементу */
+    height: auto; /* Чтобы сохранить пропорции изображения */
 }
 
 
 .about-section {
     /* Стили для второй секции */
-    padding: 60px 20px; /* Внутренние отступы: 60px сверху и снизу, 20px по бокам */
     background-color: #fff; /* Фоновый цвет секции */
-    text-align: center; /* Выравнивание текста по центру */
+    padding-top: 20px;  /* Внутренний отступ сверху в 20 пикселей */
+    padding-bottom: 20px; /* Внутренний отступ снизу в 20 пикселей */
 }
 
 select {
     /* Стили для выпадающего списка */
-    font-family: 'Rubik', sans-serif; /* Шрифт */
-    font-size: 16px; /* Размер текста */
-    color: #333; /* Цвет текста */
+    width: 100%; /* Ширина в 100% от родительского контейнера */
     padding: 10px; /* Внутренние отступы */
-    border: 1px solid #ccc; /* Граница */
-    border-radius: 5px; /* Закруглённые углы */
-    background-color: #fff; /* Фоновый цвет */
+    font-size: 16px; /* Размер шрифта */
     appearance: none; /* Убираем стандартный стиль браузера */
-    cursor: pointer; /* Курсор в виде указателя */
+    background-image: url('images/Vector.svg'); /* Установка стрелки */
+    background-repeat: no-repeat; /* Без повторения изображения */
+    background-position: right 10px center; /* Позиционирование стрелки */
+    background-size: 12px; /* Размер стрелки */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 4px; /* Закругление углов */
 }
 
 .section-title {
-    font-family: 'Rubik', sans-serif; /* Шрифт */
-    font-size: 32px; /* Размер текста */
-    color: #333; /* Цвет текста */
-    text-align: center; /* Выравнивание по центру */
-    margin-bottom: 20px; /* Отступ снизу */
-    text-transform: uppercase; /* Текст в верхнем регистре */
-    letter-spacing: 2px; /* Расстояние между буквами */
+    /* Стили для заголовков во второй секции */
+    font-family: 'Inter', sans-serif; /* Шрифт */
+    font-weight: 700; /* Насыщенность (жирный) */
+    font-size: 24px; /* Размер шрифта */
+    line-height: 29.05px; /* Межстрочный интервал */
+    letter-spacing: 0; /* Межбуквенный интервал */
+    margin-bottom: 20px; /* Установка нижнего внешнего отступа в 20 пикселей */
+    padding: 10px 0; /* Установка внутренних отступов сверху и снизу в 10 пикселей */
 }
 
 .frameworks-list {
     /* Стили для маркированного списка во второй секции */
-    font-family: 'Rubik', sans-serif; /* Шрифт */
-    font-size: 18px; /* Размер текста */
-    color: #333; /* Цвет текста */
-    padding: 10px 0; /* Отступы сверху и снизу для каждого элемента */
-    border-bottom: 1px solid #eee; /* Граница между элементами */
-    display: flex; /* Используем Flexbox для выравнивания */
-    align-items: center; /* Выравниваем элементы по центру */
+    font-family: 'Inter', sans-serif; /* Шрифт */
+    font-weight: 400; /* Насыщенность (жирный) */
+    font-size: 16px; /* Размер шрифта */
+    line-height: 19.36px; /* Межстрочный интервал */
+    letter-spacing: 0; /* Межбуквенный интервал */
+    list-style-image: url('images/Marker.svg'); /* Укажите путь к вашему изображению */
+    padding-left: 20px; /* Отступ слева для текста списка */
 }
 
 .books-list {
     /* Стили для нумерованного списка во второй секции */
-    font-family: 'Rubik', sans-serif; /* Шрифт */
-    font-size: 18px; /* Размер текста */
-    color: #333; /* Цвет текста */
-    padding: 10px 0; /* Отступы сверху и снизу для каждого элемента */
-    border-bottom: 1px solid #eee; /* Граница между элементами */
-    display: flex; /* Используем Flexbox для выравнивания */
-    align-items: center; /* Выравниваем элементы по центру */
+    font-family: 'Inter', sans-serif; /* Шрифт */
+    font-weight: 400; /* Насыщенность (жирный) */
+    font-size: 16px; /* Размер шрифта */
+    line-height: 19.36px; /* Межстрочный интервал */
+    letter-spacing: 0; /* Межбуквенный интервал */
+    padding-left: 20px; /* Отступ слева для текста списка */
 }
 
 .label {
     /* Стили для подписей чекбоксов */
-    font-family: 'Rubik', sans-serif; /* Шрифт */
-    font-size: 16px; /* Размер текста */
-    color: #333; /* Цвет текста */
-    display: flex; /* Используем Flexbox для выравнивания */
-    align-items: center; /* Выравниваем текст и чекбокс по центру */
-    margin-bottom: 10px; /* Отступ снизу */
-    cursor: pointer; /* Курсор в виде указателя */
+    font-family: 'Inter', sans-serif; /* Шрифт */
+    font-weight: 400; /* Насыщенность (жирный) */
+    font-size: 16px; /* Размер шрифта */
+    line-height: 19.36px; /* Межстрочный интервал */
+    letter-spacing: 0; /* Межбуквенный интервал */
 }
 
 .text-field {
     /* Стили для односточного поля ввода текста */
-    font-family: 'Rubik', sans-serif; /* Шрифт */
-    font-size: 16px; /* Размер текста */
-    color: #333; /* Цвет текста */
-    padding: 10px 15px; /* Внутренние отступы */
-    border: 1px solid #ccc; /* Граница */
-    border-radius: 5px; /* Закруглённые углы */
+    width: 400px; /* Установка ширины текстового поля ввода */
+    padding: 10px; /* Внутренние отступы сверху и снизу по 10px, слева и справа по 10px */
+    border: 2px solid #007BFF; /* Граница 2px выбранного цвета */
+    border-radius: 5px; /* Скругление углов */
+    font-size: 16px; /* Размер шрифта текста внутри поля ввода */
+    outline: none; /* Убираем фокусное обрамление */
 }
 
 .btn {
-    background-color: #007bff;
+    /* Стили для кнопки */
+    background-color: #2965F1;
+    color: #FFFFFF; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Внутренние отступы (сверху/снизу и слева/справа) */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Курсор при наведении */
+    font-size: 16px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход фона */
 }
 
 .line {
     /* Стили для линии */
-    width: 100%; /* Ширина линии */
-    height: 1px; /* Толщина линии */
-    background-color: #ccc; /* Цвет линии */
-    margin: 20px 0; /* Отступы сверху и снизу */
+    margin-top: 20px;  /* Внешний отступ сверху в 20 пикселей */
+    margin-bottom: 20px; /* Внешний отступ снизу в 20 пикселей */
 }
 
 table {
     /* Стили для таблицы */
-    width: 100%; /* Ширина таблицы */
-    border-collapse: collapse; /* Убираем двойные границы */
-    font-family: 'Rubik', sans-serif; /* Шрифт */
-    margin: 20px 0; /* Отступы сверху и снизу */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для таблицы */
+    border-collapse: collapse; /* Убирает двойные границы между ячейками */
+    width: 100%; /* Задает ширину таблицы на 100% родительского элемента */
 }
 
 th, td {
     /* Стили для ячеек таблицы */
-    background-color: #007bff; /* Фоновый цвет заголовков */
-    color: #fff; /* Цвет текста */
-    padding: 12px; /* Внутренние отступы */
+    border: 1px solid #000; /* Устанавливает черные границы для ячеек */
+    padding: 10px; /* Внутренние отступы в 10 пикселей для ячеек */
     text-align: left; /* Выравнивание текста по левому краю */
-    border-bottom: 2px solid #0056b3; /* Граница снизу */
 }
 
 footer {
     /* Стили для футера */
-    background-color: #333; /* Фоновый цвет */
-    color: #fff; /* Цвет текста */
-    padding: 40px 20px; /* Внутренние отступы */
-    font-family: 'Rubik', sans-serif; /* Шрифт */
-    text-align: center; /* Выравнивание текста по центру */
+    background-color: #A3A7FF; /* Задайте желаемый цвет фона, например, светло-серый */
+    padding-top: 20px;  /* Внутренний отступ сверху в 20 пикселей */
+    padding-bottom: 20px; /* Внутренний отступ снизу в 20 пикселей */
 }
 
 .footer-link {
     /* Стили для футера */
-    list-style: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы */
-    margin: 20px 0 0; /* Отступ сверху */
-    display: flex; /* Используем Flexbox для расположения ссылок */
-    justify-content: center; /* Центрирование ссылок */
-    gap: 20px; /* Расстояние между ссылками */
+    text-decoration: none; /* Убирает подчеркивание */
+    color: blue; /* Цвет обычной ссылки */
 }
