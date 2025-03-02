@@ -11,7 +11,7 @@ body {
 
 header {
     /* Стили для хедера */
-    background-color: #007bff;
+    background-color: #2965F1;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -23,7 +23,7 @@ header span {
     font-size: 20px;
     line-height: 24.2px;
     letter-spacing: 0;
-    color: #333;
+    color: #fff;
 }
 
 .main-section {
@@ -33,7 +33,7 @@ header span {
 
     /* Внутренние отступы сверху и снизу */
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
 
     /* Минимальная высота, равная высоте окна браузера */
     min-height: 100vh;
