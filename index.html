@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <title>It-incubator precourse</title>
 </head>
-<body data-cy="hw2-body">
+
+<body class="body" data-cy="hw2-body">
     <header class="header" data-cy="hw2-header">
         <span class="span" data-cy="hw2-header-span">IT-INCUBATOR</span>
     </header>
@@ -21,11 +22,13 @@
     </section>
 
     <section class="about-section" data-cy="hw2-section-about-pre">
-        <select data-cy="hw2-select-pre" name="" data-cy="">
-            <option value="">Paris</option>
-            <option value="" selected>Minsk</option>
-            <option value="">Milan</option>
-        </select>
+        <label>
+            <select data-cy="hw2-select-pre" name="" data-cy="">
+                <option value="">Paris</option>
+                <option value="" selected>Minsk</option>
+                <option value="">Milan</option>
+            </select>
+        </label>
 
         <div>
             <h2 class="section-title" data-cy="hw2-section-title-pre">Любимые фреймворки</h2>
@@ -49,31 +52,31 @@
                 <input type="checkbox" checked name="" id="1">
                 HTML5
             </label>
-    
+
             <label class="label" data-cy="hw2-label-pre" for="2">
                 <input type="checkbox" checked name="" id="2">
                 CSS3
             </label>
-    
+
             <label class="label" data-cy="hw2-label-pre" for="3">
                 <input type="checkbox" name="" id="3">
                 JavaScript
             </label>
-    
+
             <label class="label" data-cy="hw2-label-pre" for="4">
                 <input type="checkbox" name="" id="4">
                 Jquery
             </label>
-    
+
             <label class="label" data-cy="hw2-label-pre" for="5">
                 <input type="checkbox" name="" id="5">
                 React
             </label>
         </div>
-        
+
         <input class="text-field" data-cy="hw2-text-field-pre" type="text" placeholder="Новый скилл">
         <button class="btn" data-cy="hw2-btn-pre">Добавить</button>
-        
+
         <hr class="line" data-cy="hw2-line-pre">
 
         <table class="table" data-cy="hw2-about-table-pre" border="1">
