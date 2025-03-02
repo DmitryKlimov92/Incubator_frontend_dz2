@@ -33,7 +33,7 @@ header span {
 
     /* Внутренние отступы сверху и снизу */
     padding-top: 60px;
-    padding-bottom: 0px;
+    padding-bottom: 60px;
 
     /* Минимальная высота, равная высоте окна браузера */
     min-height: 100vh;
@@ -107,7 +107,7 @@ select {
     line-height: 29.05px;
     letter-spacing: 0;
     margin-bottom: 20px;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .frameworks-list {
@@ -172,12 +172,13 @@ table {
     /* Стили для таблицы */
     border-collapse: collapse;
     width: 100%;
+    font-size: 14px;
 }
 
 th, td {
     /* Стили для ячеек таблицы */
     border: 1px solid #000;
-    padding: 10px;
+    padding: 12px 15px;
     text-align: left;
 }
 
@@ -190,6 +191,7 @@ footer {
 
 .footer-link {
     /* Стили для футера */
+    font-size: 14px;
     text-decoration: none;
     color: blue;
 }
